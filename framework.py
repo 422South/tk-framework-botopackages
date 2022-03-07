@@ -11,7 +11,7 @@
 import sgtk
 
 
-class QtWidgetFramework(sgtk.platform.Framework):
+class TkBotoPackages(sgtk.platform.Framework):
 
     ##########################################################################################
     # init and destroy
