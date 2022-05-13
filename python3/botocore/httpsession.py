@@ -21,20 +21,20 @@ from urllib3.util.retry import Retry
 from urllib3.util.ssl_ import (
     DEFAULT_CIPHERS,
     OP_NO_COMPRESSION,
-    PROTOCOL_TLS,
+    # PROTOCOL_TLS,
     OP_NO_SSLv2,
     OP_NO_SSLv3,
-    is_ipaddress,
+    # is_ipaddress,
     ssl,
 )
 from urllib3.util.url import parse_url
 
 try:
-    from urllib3.util.ssl_ import OP_NO_TICKET, PROTOCOL_TLS_CLIENT
+    from urllib3.util.ssl_ import OP_NO_TICKET, PROTOCOL_TLS_CLIENT, PROTOCOL_TLS
 except ImportError:
     # Fallback directly to ssl for version of urllib3 before 1.26.
     # They are available in the standard library starting in Python 3.6.
-    from ssl import OP_NO_TICKET, PROTOCOL_TLS_CLIENT
+    from ssl import OP_NO_TICKET, PROTOCOL_TLS_CLIENT, PROTOCOL_TLS
 
 try:
     # Always import the original SSLContext, even if it has been patched
