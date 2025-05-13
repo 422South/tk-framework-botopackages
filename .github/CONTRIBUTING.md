@@ -15,13 +15,17 @@ The work-flow for submitting a new pull request is designed to be simple, but al
 * Fork the project into your personal space on GitHub.com (optional).
 * Create a new branch (with the name `issue-[issue_number]`, replacing [issue_number] with the issue number you're resolving), e.g. `issue-1234`.
 * Commit your changes.
- * When writing commit messages, consider closing your issues via the commit message (by including "fix #22" or "fixes #22", for example ).
-  * The issues will be referenced in the first instance and then closed once the MR is accepted.
-* **Add your changes to the CHANGELOG.md file** - this can be found in [bundle-root/.github/CHANGELOG.md].
+* When writing commit messages, consider closing your issues via the commit message (by including "fix #22" or "fixes #22", for example ).
+* The issues will be referenced in the first instance and then closed once the MR is accepted.
 * Push the commit(s) to your fork or issue-branch if on the 422South Github site.
 * Submit a pull request (PR) to the main branch.
+* **MAKE SURE THAT BUNDLE TAG IS ADDED TO THE ISSUE** (Otherwise the workflow will not add a new tag and upload the bundle to SG on PR merge)
 * The PR title should describe the change that has been made.
 * The PR description should confirm what changes have been made and how you know they're correct (with references).
  * Please include any relevant screenshots to prove the changes work.
 * Ensure you link any relevant issues in the merge request (you can type hash and the issue ID, eg #275).  Comment on those issues linking back to the PR (you can reference PRs in the same way as issues, using the format #pr-id).
 * Be prepared to answer any questions about your PR when it is reviewed for acceptance.
+
+**NOTE: All PR's will need at least one approval from a person with write permission who is not the contributor.**
+
+**Direct commit to the master branch is prohibited**
